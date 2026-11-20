@@ -39,7 +39,7 @@ jobs:
       - name: Construir imagen de laboratorio
         run: docker build -t securecampus:lab009 .
       - name: Escanear imagen con Trivy
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: 'securecampus:lab009'
           format: 'table'
